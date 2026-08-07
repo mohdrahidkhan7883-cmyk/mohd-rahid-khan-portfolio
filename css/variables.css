@@ -1,0 +1,103 @@
+/*=========================================
+        GOOGLE FONT
+=========================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+
+/*=========================================
+          ROOT VARIABLES
+=========================================*/
+
+:root{
+
+    /* Background */
+
+    --bg:#070B14;
+
+    --bg2:#0B1120;
+
+    --card:rgba(17,24,39,.45);
+
+    --card-border:rgba(255,255,255,.08);
+
+    /* Brand */
+
+    --primary:#22D3EE;
+
+    --secondary:#3B82F6;
+
+    /* Text */
+
+    --white:#F8FAFC;
+
+    --gray:#94A3B8;
+
+    /* Shadow */
+
+    --shadow:0 15px 45px rgba(0,0,0,.35);
+
+    --glow:0 0 30px rgba(34,211,238,.12);
+
+    /* Radius */
+
+    --radius:24px;
+
+    /* Font */
+
+    --heading-font:"Space Grotesk",sans-serif;
+
+    --body-font:"Inter",sans-serif;
+
+    /* Animation */
+
+    --transition:.35s ease;
+
+
+
+    /* Transition */
+/*==============================
+ PREMIUM GLASS SYSTEM
+==============================*/
+
+
+
+        /* Glass Background */
+    
+        --glass-bg:rgba(17,24,39,.58);
+    
+        --glass-bg-hover:rgba(17,24,39,.72);
+    
+        /* Border */
+    
+        --glass-border:rgba(255,255,255,.08);
+    
+        --glass-border-hover:rgba(34,211,238,.28);
+    
+        /* Shadow */
+    
+        --glass-shadow:
+    
+            0 8px 30px rgba(0,0,0,.28),
+    
+            0 1px 0 rgba(255,255,255,.05) inset;
+    
+        --glass-shadow-hover:
+    
+            0 20px 45px rgba(0,0,0,.40),
+    
+            0 0 28px rgba(34,211,238,.12),
+    
+            0 1px 0 rgba(255,255,255,.08) inset;
+    
+    
+    /* =========================
+   SECTION SPACING
+========================= */
+
+--section-padding-top:60px;
+
+--section-padding-bottom:60px;
+
+--section-gap:35px;
+}

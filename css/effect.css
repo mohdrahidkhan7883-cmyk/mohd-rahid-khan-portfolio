@@ -1,0 +1,167 @@
+/*======================================
+        GLOBAL GLASS CARD SYSTEM
+======================================*/
+
+.glass-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:rgba(17,24,39,.55);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    box-shadow:
+
+        0 12px 35px rgba(0,0,0,.35),
+
+        inset 0 1px 0 rgba(255,255,255,.05);
+
+    transition:.35s;
+
+}
+
+.glass-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(34,211,238,.35);
+
+    box-shadow:
+
+        0 18px 45px rgba(0,0,0,.45),
+
+        0 0 30px rgba(34,211,238,.18);
+
+}
+/*=========================================
+        GLOBAL NEURAL NETWORK SYSTEM
+=========================================*/
+
+body{
+
+    position:relative;
+
+    overflow-x:hidden;
+
+}
+
+/* ---------- Top Right ---------- */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    top:0;
+
+    right:0;
+
+    width:min(42vw,650px);
+
+    height:min(42vw,650px);
+
+    background:url("../assets/patterns/neural.svg");
+
+    background-repeat:no-repeat;
+
+    background-size:contain;
+
+    background-position:top right;
+
+    opacity:.28;
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
+
+/* ---------- Bottom Left ---------- */
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    left:0;
+
+    bottom:0;
+
+    width:min(42vw,650px);
+
+    height:min(42vw,650px);
+
+    background:url("../assets/patterns/neural.svg");
+
+    background-repeat:no-repeat;
+
+    background-size:contain;
+
+    background-position:bottom left;
+
+    transform:rotate(180deg);
+
+    opacity:.22;
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
+/*=========================================
+            GLOBAL GLOW
+=========================================*/
+
+body::before,
+body::after{
+
+    filter:
+
+        drop-shadow(0 0 12px rgba(34,211,238,.18))
+
+        drop-shadow(0 0 30px rgba(34,211,238,.10));
+
+}
+@keyframes neuralFloat{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+body::before{
+
+    animation:neuralFloat 14s ease-in-out infinite;
+
+}
+
+body::after{
+
+    animation:neuralFloat 18s ease-in-out infinite reverse;
+
+}

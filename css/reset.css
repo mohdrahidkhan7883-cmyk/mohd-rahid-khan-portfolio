@@ -1,0 +1,160 @@
+/*=========================================
+            RESET
+=========================================*/
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:var(--body-font);
+
+    
+
+    color:var(--white);
+
+    overflow-x:hidden;
+
+    position:relative;
+    background:
+
+    radial-gradient(
+
+        circle at 88% 10%,
+
+        rgba(34,211,238,.09),
+
+        transparent 28%
+
+    ),
+
+    radial-gradient(
+
+        circle at 8% 82%,
+
+        rgba(59,130,246,.07),
+
+        transparent 30%
+
+    ),
+
+    #070B14;
+
+}
+
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+
+ul{
+
+    list-style:none;
+
+}
+
+
+button{
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+}
+
+
+input{
+
+    outline:none;
+
+}
+
+
+section{
+
+    width:100%;
+
+}
+
+
+.container{
+
+    width:min(90%,1300px);
+
+    margin:auto;
+
+}
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    width:650px;
+
+    height:650px;
+
+    top:-250px;
+
+    right:-200px;
+
+   
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    width:600px;
+
+    height:600px;
+
+    bottom:-250px;
+
+    left:-220px;
+
+    background:radial-gradient(circle,
+    rgba(59,130,246,.10),
+    transparent 70%);
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
