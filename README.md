@@ -5,8 +5,7 @@ A premium portfolio showcasing my projects, technical skills, and passion for so
 ---
 
 ## 🌐 Live Portfolio
-
-Coming Soon...
+https://mohd-rahid-khan.vercel.app/
 
 ---
 
