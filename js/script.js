@@ -112,6 +112,28 @@ window.addEventListener("scroll", () => {
     });
 
 });
+// ================================
+// MOBILE HAMBURGER MENU
+// ================================
+
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.querySelector(".nav-menu");
+
+if (menuToggle && navMenu) {
+
+    menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    });
+
+    // Menu link click hone par menu close
+    document.querySelectorAll(".nav-menu a").forEach(link => {
+        link.addEventListener("click", () => {
+            menuToggle.classList.remove("active");
+            navMenu.classList.remove("active");
+        });
+    });
+}
 
 /*=========================
 PDF VIEWER
